@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BestBuy Product AutoComplete</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<script>
+$(function() {
+    $('#list_name').autocomplete({
+        source: 'suggest_product.php',
+	minLength: 3
+    })
+});
+</script>
+<center>
+<img src="800px-Best_Buy_Logo.svg.png" height="150" width="250">
+<div class="ui-widget">
+    <label for="products"><img src="search-icon.png" height="30" width="30"> </label>
+    <input id="list_name">
+</div>
+</center>
+</body>
+</html>
