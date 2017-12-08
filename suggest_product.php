@@ -1,11 +1,11 @@
 <?php
     //database configuration
     $sql = new mysqli(
-  "localhost", // host
+  'localhost', // host
   'admin', // username
   'superman',     // password
   'products', // database name
-  );
+) or die('Error: ' . mysqli_error($sql));
     //get search term
     $searchTerm = $_GET['term'];
 
