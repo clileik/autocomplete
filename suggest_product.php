@@ -2,7 +2,7 @@
     //database configuration
     $sql = new mysqli(
   localhost, // host
-  'uadmin', // username
+  'admin', // username
   'superman',     // password
   'products', // database name
   null,
