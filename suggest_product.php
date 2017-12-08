@@ -1,12 +1,10 @@
 <?php
     //database configuration
     $sql = new mysqli(
-  localhost, // host
+  "localhost", // host
   'admin', // username
   'superman',     // password
   'products', // database name
-  null,
-  null
   );
     //get search term
     $searchTerm = $_GET['term'];
