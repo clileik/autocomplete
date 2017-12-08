@@ -2,9 +2,7 @@
     //database configuration
     $sql = new mysqli(
   'localhost', // host
-  'admin', // username
-  'superman',     // password
-  'products', // database name
+  'root'
 ) or die('Error: ' . mysqli_error($sql));
     //get search term
     $searchTerm = $_GET['term'];
